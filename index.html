@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IF-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Währungsumrechner</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" 
+    rel="stylesheet"
+    />
+</head>
+<body>
+    <div class="kopfzeile">
+        <img src="img/menu.png" alt=""> 
+        <h2>Währungsrechner</h2>
+    </div>
+      
+    <div class="input-container">
+        <img class="flag" src="img/chf.png"  alt="">
+        <input value="100" id="frankenField" type="number">
+        <span class="currency">CHF</span>
+    </div>
+
+    <div class="container-center">
+        <img class="pfeile" src="img/arrows.png" alt="">
+    </div>
+
+ <div class="input-container">
+     <select size="1">
+        <option selected value="choose">Choose your currency</option>
+        <option value="Dollar"> USD</option>
+        <option value="Euro"> EUR</option>
+        <option value="Yen"> YEN</option>
+        <option value="Krone"> SEK</option>
+        <option value="Pfund"> GBP</option>
+        </select></div>
+
+    <!--<div class="input-container">
+    <label for="currency">Wählen Sie eine Währung:</label>
+
+
+     <select name="currency" id="currency">
+
+        <option 
+            value="USD">USD<img class="flag" src="img/usa.png"  alt="">
+            <input id="usd" type="text">
+            <span class="currency">USD</span>
+        </option>
+
+
+          <option 
+            value="EUR">EUR<img class="flag" src="img/eu.png"  alt="">
+            <input id="eur" type="text">
+            <span class="currency">EUR</span> 
+        </option>
+     </select>>
+    </div>-->
+      
+    <!--<div class="input-container">
+        <img class="flag" src="img/usa.png"  alt="">
+        <input id="usd" type="text">
+        <span class="currency">USD</span>
+    </div>-->
+      
+    <div class="container-center">
+        <button onclick="CurrCalc()">Berechnen</button>
+    </div>
+
+    <script src="CurrCalc.js"></script>
+</body>
+</html>
